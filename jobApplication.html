@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        #p1{
+            text-align: center;
+        }
+        #input1,#input2{
+            padding: 5px 5px;
+            opacity: 0.5;
+        }
+        .resume{
+            height: 200px;
+            width: 100%;
+            text-align: center;
+            line-height: 200px;
+            border: 1px solid black;
+        }
+        .resume button{
+            border-radius:50px ;
+            padding: 12px 14px;
+            background-color: blue;
+            color: white;
+            font-weight:900 ;
+            cursor: pointer;
+            outline: none;
+            border: none;
+        }
+        .resume button:hover{
+                background-color: rgb(41, 117, 41);
+                color: black;
+                border: 2px solid black;
+        }
+        #btn1{
+            width: 100px;
+            height: 50px;
+            border-radius:50px ;
+            padding: 12px 15px;
+            margin-left: 47%;
+            background-color: blue;
+            color: white;
+            font-weight: 900;
+            cursor: pointer;
+            outline: none;
+            border: none;
+        }
+        #btn1:hover{
+            background-color: rgb(41, 117, 41);
+            color: black;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+        form{
+            margin: 10px 10px;
+            width: 50%;
+            margin: auto;
+            border: 1px solid black;
+            padding: 20px;
+        }
+        body{
+            border-top: 0.5px dotted black;
+            border-bottom: 1px dotted black;
+            margin: 15px 15px;
+            
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <h1>Job Application Form</h1>
+    <p id="p1">Please Fill out the Form Below to Submit Your Job Application!</p>
+    <br>
+    <hr><br>
+    <h3>Name</h3> <br>
+    <input type="text" name="fname" id="fname" placeholder="First Name">
+    <input type="text" name="lname" id="lname" placeholder="Last Name">
+    <br>
+    <br>
+    <h3>Address</h3> <br>
+    <label for="email">Email
+        <input type="email" name="mail" id="mail" placeholder="ex:sivapraneesh203@gmail.com">
+    </label>
+    <label for="phone">Phone Number 
+        <input type="text" name="phone" id="phone" placeholder="(000) 000-0000">
+    </label>
+    <br> <br>
+   <label for="position">Applied Position 
+    <input type="text" name="position" id="position">
+   </label>
+   <label for="sdate">Earliest Possible Start Date 
+    <input type="date"  name="sdate" id="sdate"></label>
+    <br> <br>
+    <label for="idate">Preferred Interview Date
+        <input type="datetime-local" name="idate" id="idate">
+    </label>
+    <label for=""></label>
+   <br><br>
+   <h3>Cover Letter</h3><br>
+   <textarea rows="10" cols="10" style="height: 200px; width: 100%; border: 0.5px solid black;"></textarea>
+   <p>Please don't exceed 200 words</p>
+   <br><br>
+   <h3>Upload Resume</h3>
+   <br>
+   <div class="resume">
+    <button type="file">Upload Resume</button>
+   </div>
+   <br><br>
+   <h3>Any Other Documents to Upload </h3>
+   <br>
+   <div class="resume">
+    <button type="button">Upload Other documents</button>
+   </div>
+   <p>You can share certificates, diplomas  etc.</p>
+   <br><br>
+    <button type="button" id="btn1">Apply</button>
+    </form>
+    
+</body>
+</html>
